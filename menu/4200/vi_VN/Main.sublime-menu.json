@@ -1,18 +1,18 @@
 [
 	{
 		"caption": "Tệp",
-		"mnemonic": "F",
+		"mnemonic": "T",
 		"id": "file",
 		"children":
 		[
-			{ "command": "new_file", "caption": "Tệp mới", "mnemonic": "N" },
+			{ "command": "new_file", "caption": "Tệp mới", "mnemonic": "M" },
 
-			{ "command": "prompt_open_file", "caption": "Mở tệp...", "mnemonic": "O", "platform": "!OSX" },
+			{ "command": "prompt_open_file", "caption": "Mở tệp...", "mnemonic": "T", "platform": "!OSX" },
 			{ "command": "prompt_open_folder", "caption": "Mở thư mục...", "platform": "!OSX" },
 			{ "command": "prompt_open", "caption": "Mở...", "platform": "OSX" },
 			{
 				"caption": "Mở gần đây",
-				"mnemonic": "R",
+				"mnemonic": "G",
 				"children":
 				[
 					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Mở lại tệp đã đóng" },
@@ -93,8 +93,8 @@
 			},
 			{ "command": "force_reopen_as", "args": {"type": "image"}, "caption": "Mở lại tệp dạng ảnh" },
 			{ "command": "force_reopen_as", "args": {"type": "text"}, "caption": "Mở lại tệp dạng văn bản" },
-			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Chia đôi giao diện", "mnemonic": "e" },
-			{ "command": "save", "args": {"async": true}, "caption": "Lưu", "mnemonic": "S" },
+			{ "command": "clone_file", "args": {"add_to_selection": true, "retain_viewport_position": true}, "caption": "Chia đôi giao diện", "mnemonic": "C" },
+			{ "command": "save", "args": {"async": true}, "caption": "Lưu", "mnemonic": "L" },
 			{
 				"caption": "Lưu với mã hóa",
 				"id": "save_with_encoding",
@@ -143,24 +143,24 @@
 					{ "caption": "Hệ thập lục phân", "command": "save", "args": { "async": true, "encoding": "Hexadecimal" } }
 				]
 			},
-			{ "command": "prompt_save_as", "caption": "Lưu thành...", "mnemonic": "A" },
-			{ "command": "save_all", "caption": "Lưu tất cả", "mnemonic": "l" },
-			{ "command": "html_print", "caption": "In...", "mnemonic": "P" },
+			{ "command": "prompt_save_as", "caption": "Lưu thành...", "mnemonic": "U" },
+			{ "command": "save_all", "caption": "Lưu tất cả", "mnemonic": "C" },
+			{ "command": "html_print", "caption": "In...", "mnemonic": "N" },
 			{ "caption": "-", "id": "window" },
-			{ "command": "new_window", "caption": "Cửa sổ mới", "mnemonic": "W" },
+			{ "command": "new_window", "caption": "Cửa sổ mới", "mnemonic": "S" },
 			{ "command": "close_window", "caption": "Đóng cửa sổ" },
 			{ "caption": "-", "id": "close" },
-			{ "command": "close", "caption": "Đóng tệp", "mnemonic": "C" },
-			{ "command": "revert", "caption": "Hoàn tác tệp", "mnemonic": "v" },
+			{ "command": "close", "caption": "Đóng tệp", "mnemonic": "P" },
+			{ "command": "revert", "caption": "Hoàn tác tệp", "mnemonic": "H" },
 			{ "command": "close_all", "caption": "Đóng tất cả tệp" },
 			{ "caption": "-", "id": "exit" },
-			{ "command": "exit", "caption": "Thoát", "mnemonic": "x", "platform": "Windows" },
-			{ "command": "exit", "caption": "Thoát", "mnemonic": "Q", "platform": "Linux" }
+			{ "command": "exit", "caption": "Thoát", "mnemonic": "O", "platform": "Windows" },
+			{ "command": "exit", "caption": "Thoát", "mnemonic": "O", "platform": "Linux" }
 		]
 	},
 	{
 		"caption": "Chỉnh sửa",
-		"mnemonic": "E",
+		"mnemonic": "H",
 		"id": "edit",
 		"children":
 		[
@@ -183,7 +183,7 @@
 			{ "command": "paste_from_history", "caption": "Dán từ lịch sử" },
 			{ "caption": "-" },
 			{
-				"caption": "Dòng", "mnemonic": "L",
+				"caption": "Dòng", "mnemonic": "D",
 				"id": "line",
 				"children":
 				[
@@ -198,7 +198,7 @@
 				]
 			},
 			{
-				"caption": "Chú thích", "mnemonic": "m",
+				"caption": "Chú thích", "mnemonic": "C",
 				"id": "comment",
 				"children":
 				[
@@ -207,7 +207,7 @@
 				]
 			},
 			{
-				"caption": "Văn bản", "mnemonic": "T",
+				"caption": "Văn bản", "mnemonic": "V",
 				"id": "text",
 				"children":
 				[
@@ -260,7 +260,7 @@
 					{ "command": "unfold" },
 					{ "command": "unfold_all", "caption": "Mở rộng tất cả" },
 					{ "caption": "-" },
-					{ "caption": "Thu gọn tất cả", "command": "fold_by_level", "mnemonic": "A", "args": {"level": 1} },
+					{ "caption": "Thu gọn tất cả", "command": "fold_by_level", "mnemonic": "U", "args": {"level": 1} },
 					{ "caption": "Thu gọn cấp 2", "command": "fold_by_level", "mnemonic": "2", "args": {"level": 2} },
 					{ "caption": "Thu gọn cấp 3", "command": "fold_by_level", "mnemonic": "3", "args": {"level": 3} },
 					{ "caption": "Thu gọn cấp 4", "command": "fold_by_level", "mnemonic": "4", "args": {"level": 4} },
@@ -274,7 +274,7 @@
 				]
 			},
 			{
-				"caption": "Chuyển đổi kiểu chữ", "mnemonic": "a",
+				"caption": "Chuyển đổi kiểu chữ", "mnemonic": "K",
 				"id": "convert_case",
 				"children":
 				[
@@ -332,7 +332,7 @@
 	},
 	{
 		"caption": "Vùng chọn",
-		"mnemonic": "S",
+		"mnemonic": "V",
 		"id": "selection",
 		"children":
 		[
@@ -407,7 +407,7 @@
 			{ "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Tìm trong tệp..." },
 			{
 				"caption": "Kết quả tìm kiếm",
-				"mnemonic": "R",
+				"mnemonic": "Q",
 				"children":
 				[
 					{ "command": "show_panel", "args": {"panel": "output.find_results", "panel_name" : "Results Panel", "toggle" : true, "toggle_when_not_focused": true} },
@@ -420,7 +420,7 @@
 	},
 	{
 		"caption": "Hiển thị",
-		"mnemonic": "V",
+		"mnemonic": "N",
 		"id": "view",
 		"children":
 		[
@@ -445,7 +445,7 @@
 			{ "caption": "-", "id": "groups" },
 			{
 				"caption": "Bố cục",
-				"mnemonic": "L",
+				"mnemonic": "B",
 				"id": "layout",
 				"children":
 				[
@@ -574,7 +574,7 @@
 			},
 			{
 				"caption": "Tiêu điểm nhóm",
-				"mnemonic": "F",
+				"mnemonic": "T",
 				"children":
 				[
 
@@ -589,7 +589,7 @@
 			},
 			{
 				"caption": "Chuyển tệp sang nhóm",
-				"mnemonic": "M",
+				"mnemonic": "S",
 				"children":
 				[
 					{ "command": "move_to_neighboring_group", "caption": "Tiếp theo" },
@@ -604,13 +604,13 @@
 			{ "caption": "-" },
 			{
 				"caption": "Cú pháp",
-				"mnemonic": "S",
+				"mnemonic": "P",
 				"id": "syntax",
 				"children": [ { "command": "$file_types" } ]
 			},
 			{
 				"caption": "Khoảng lề",
-				"mnemonic": "I",
+				"mnemonic": "L",
 				"id": "indentation",
 				"children":
 				[
@@ -643,7 +643,7 @@
 				]
 			},
 			{ "caption": "-", "id": "settings" },
-			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Tự động xuống dòng", "mnemonic": "W", "checkbox": true },
+			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Tự động xuống dòng", "mnemonic": "X", "checkbox": true },
 			{
 				"caption": "Cột xuống dòng",
 				"children":
@@ -684,11 +684,11 @@
 	},
 	{
 		"caption": "Đi tới",
-		"mnemonic": "G",
+		"mnemonic": "I",
 		"id": "goto",
 		"children":
 		[
-			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Đi tới bất kỳ đâu…", "mnemonic": "A" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Đi tới bất kỳ đâu…", "mnemonic": "B" },
 			{ "caption": "-" },
 			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Đi tới ký hiệu…" },
 			{ "command": "goto_symbol_in_project", "caption": "Đi tới ký hiệu trong dự án…" },
@@ -732,7 +732,7 @@
 			{ "caption": "-" },
 			{
 				"caption": "Cuộn",
-				"mnemonic": "S",
+				"mnemonic": "U",
 				"id": "scroll",
 				"children":
 				[
@@ -743,7 +743,7 @@
 			},
 			{
 				"caption": "Đánh dấu trang",
-				"mnemonic": "B",
+				"mnemonic": "A",
 				"id": "bookmarks",
 				"children":
 				[
@@ -777,7 +777,7 @@
 	},
 	{
 		"caption": "Công cụ",
-		"mnemonic": "T",
+		"mnemonic": "C",
 		"id": "tools",
 		"children":
 		[
@@ -786,7 +786,7 @@
 			{ "caption": "-", "id": "build" },
 			{
 				"caption": "Hệ thống biên dịch",
-				"mnemonic": "u",
+				"mnemonic": "N",
 				"children":
 				[
 					{ "command": "set_build_system", "args": { "file": "" }, "caption": "Tự động", "checkbox": true },
@@ -811,15 +811,15 @@
 			},
 			{ "command": "build", "mnemonic": "B" },
 			{ "command": "build", "args": {"select": true}, "caption": "Biên dịch với…" },
-			{ "command": "cancel_build", "caption": "Hủy biên dịch", "mnemonic": "C" },
+			{ "command": "cancel_build", "caption": "Hủy biên dịch", "mnemonic": "D" },
 			{
 				"caption": "Kết quả biên dịch",
-				"mnemonic": "R",
+				"mnemonic": "K",
 				"children":
 				[
-					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Hiển thị kết quả biên dịch", "mnemonic": "S" },
+					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Hiển thị kết quả biên dịch", "mnemonic": "H" },
 					{ "command": "next_result", "mnemonic": "N" },
-					{ "command": "prev_result", "caption": "Kết quả trước", "mnemonic": "P" }
+					{ "command": "prev_result", "caption": "Kết quả trước", "mnemonic": "Q" }
 				]
 			},
 			{ "command": "toggle_save_all_on_build", "caption": "Lưu tất cả khi biên dịch", "mnemonic": "L", "checkbox": true },
@@ -855,7 +855,7 @@
 	{
 		"caption": "Dự án",
 		"id": "project",
-		"mnemonic": "P",
+		"mnemonic": "D",
 		"children":
 		[
 			{ "command": "prompt_open_project_or_workspace", "caption": "Mở dự án…" },
@@ -879,8 +879,8 @@
 				]
 			},
 			{ "caption": "-" },
-			{ "command": "save_project_and_workspace_as", "caption": "Lưu dự án thành…", "mnemonic": "D" },
-			{ "command": "close_workspace", "caption": "Đóng dự án", "mnemonic": "N" },
+			{ "command": "save_project_and_workspace_as", "caption": "Lưu dự án thành…", "mnemonic": "L" },
+			{ "command": "close_workspace", "caption": "Đóng dự án", "mnemonic": "G" },
 			{ "command": "open_file", "args": {"file": "${project}"}, "caption": "Chỉnh sửa dự án" },
 			{ "caption": "-" },
 			{ "command": "new_window_for_project", "caption": "Không gian làm việc mới cho dự án" },
@@ -967,7 +967,7 @@
 	},
 	{
 		"caption": "Trợ giúp",
-		"mnemonic": "H",
+		"mnemonic": "R",
 		"id": "help",
 		"children":
 		[
