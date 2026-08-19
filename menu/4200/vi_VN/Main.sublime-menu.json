@@ -822,11 +822,11 @@
 					{ "command": "prev_result", "caption": "Kết quả trước", "mnemonic": "P" }
 				]
 			},
-			{ "command": "toggle_save_all_on_build", "caption": "Lưu tất cả khi biên dịch", "mnemonic": "A", "checkbox": true },
+			{ "command": "toggle_save_all_on_build", "caption": "Lưu tất cả khi biên dịch", "mnemonic": "L", "checkbox": true },
 			{ "caption": "-", "id": "macros" },
 			{ "command": "toggle_record_macro", "mnemonic": "M" },
 			{ "command": "run_macro", "caption": "Phát lại Macro", "mnemonic": "P" },
-			{ "command": "save_macro", "caption": "Lưu Macro…", "mnemonic": "v" },
+			{ "command": "save_macro", "caption": "Lưu Macro…", "mnemonic": "M" },
 			{
 				"caption": "Macro",
 				"children": [ { "command": "$macros" } ]
@@ -860,7 +860,7 @@
 		[
 			{ "command": "prompt_open_project_or_workspace", "caption": "Mở dự án…" },
 			{ "command": "prompt_switch_project_or_workspace", "caption": "Chuyển dự án…" },
-			{ "command": "prompt_select_workspace", "caption": "Chuyển nhanh dự án…", "mnemonic": "S" },
+			{ "command": "prompt_select_workspace", "caption": "Chuyển nhanh dự án…", "mnemonic": "C" },
 			{
 				"caption": "Mở gần đây",
 				"children":
@@ -879,16 +879,16 @@
 				]
 			},
 			{ "caption": "-" },
-			{ "command": "save_project_and_workspace_as", "caption": "Lưu dự án thành…", "mnemonic": "A" },
-			{ "command": "close_workspace", "caption": "Đóng dự án", "mnemonic": "C" },
+			{ "command": "save_project_and_workspace_as", "caption": "Lưu dự án thành…", "mnemonic": "D" },
+			{ "command": "close_workspace", "caption": "Đóng dự án", "mnemonic": "N" },
 			{ "command": "open_file", "args": {"file": "${project}"}, "caption": "Chỉnh sửa dự án" },
 			{ "caption": "-" },
 			{ "command": "new_window_for_project", "caption": "Không gian làm việc mới cho dự án" },
-			{ "command": "save_workspace_as", "caption": "Lưu không gian làm việc thành…", "mnemonic": "A" },
+			{ "command": "save_workspace_as", "caption": "Lưu không gian làm việc thành…", "mnemonic": "K" },
 			{ "caption": "-" },
 			{ "command": "prompt_add_folder", "caption": "Thêm thư mục vào dự án…", "mnemonic": "d" },
 			{ "command": "close_folder_list", "caption": "Xóa tất cả thư mục khỏi dự án", "mnemonic": "m" },
-			{ "command": "refresh_folder_list", "caption": "Làm mới thư mục", "mnemonic": "e" }
+			{ "command": "refresh_folder_list", "caption": "Làm mới thư mục", "mnemonic": "H" }
 		]
 	},
 	{
@@ -897,7 +897,7 @@
 		"id": "preferences",
 		"children":
 		[
-			{ "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Duyệt gói…", "mnemonic": "B" },
+			{ "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Duyệt gói…", "mnemonic": "G" },
 			{ "caption": "-" },
 			{
 				"command": "edit_settings", "args":
@@ -985,7 +985,7 @@
 			{ "command": "update_check", "caption": "Kiểm tra bản cập nhật…" },
 			{ "command": "show_changelog", "caption": "Nhật ký thay đổi…" },
 			{ "command": "show_attribution", "caption": "Giấy phép và Ghi công…" },
-			{ "command": "show_about_window", "caption": "Giới thiệu về Sublime Text", "mnemonic": "A" }
+			{ "command": "show_about_window", "caption": "Giới thiệu về Sublime Text", "mnemonic": "S" }
 		]
 	}
 ]
