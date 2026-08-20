@@ -5,14 +5,14 @@
 		"id": "file",
 		"children":
 		[
-			{ "command": "new_file", "caption": "Tệp mới", "mnemonic": "M" },
+			{ "command": "new_file", "caption": "Tệp mới", "mnemonic": "m" },
 
-			{ "command": "prompt_open_file", "caption": "Mở tệp...", "mnemonic": "T", "platform": "!OSX" },
+			{ "command": "prompt_open_file", "caption": "Mở tệp...", "mnemonic": "t", "platform": "!OSX" },
 			{ "command": "prompt_open_folder", "caption": "Mở thư mục...", "platform": "!OSX" },
 			{ "command": "prompt_open", "caption": "Mở...", "platform": "OSX" },
 			{
 				"caption": "Mở gần đây",
-				"mnemonic": "G",
+				"mnemonic": "g",
 				"children":
 				[
 					{ "command": "reopen_last_file", "args": {"source": "window"}, "caption": "Mở lại tệp đã đóng" },
@@ -143,24 +143,24 @@
 					{ "caption": "Hệ thập lục phân", "command": "save", "args": { "async": true, "encoding": "Hexadecimal" } }
 				]
 			},
-			{ "command": "prompt_save_as", "caption": "Lưu thành...", "mnemonic": "U" },
-			{ "command": "save_all", "caption": "Lưu tất cả", "mnemonic": "C" },
-			{ "command": "html_print", "caption": "In...", "mnemonic": "N" },
+			{ "command": "prompt_save_as", "caption": "Lưu thành...", "mnemonic": "u" },
+			{ "command": "save_all", "caption": "Lưu tất cả", "mnemonic": "c" },
+			{ "command": "html_print", "caption": "In...", "mnemonic": "n" },
 			{ "caption": "-", "id": "window" },
-			{ "command": "new_window", "caption": "Cửa sổ mới", "mnemonic": "S" },
+			{ "command": "new_window", "caption": "Cửa sổ mới", "mnemonic": "s" },
 			{ "command": "close_window", "caption": "Đóng cửa sổ" },
 			{ "caption": "-", "id": "close" },
 			{ "command": "close", "caption": "Đóng tệp", "mnemonic": "P" },
 			{ "command": "revert", "caption": "Hoàn tác tệp", "mnemonic": "H" },
 			{ "command": "close_all", "caption": "Đóng tất cả tệp" },
 			{ "caption": "-", "id": "exit" },
-			{ "command": "exit", "caption": "Thoát", "mnemonic": "O", "platform": "Windows" },
-			{ "command": "exit", "caption": "Thoát", "mnemonic": "O", "platform": "Linux" }
+			{ "command": "exit", "caption": "Thoát", "mnemonic": "o", "platform": "Windows" },
+			{ "command": "exit", "caption": "Thoát", "mnemonic": "o", "platform": "Linux" }
 		]
 	},
 	{
 		"caption": "Chỉnh sửa",
-		"mnemonic": "H",
+		"mnemonic": "h",
 		"id": "edit",
 		"children":
 		[
@@ -260,7 +260,7 @@
 					{ "command": "unfold" },
 					{ "command": "unfold_all", "caption": "Mở rộng tất cả" },
 					{ "caption": "-" },
-					{ "caption": "Thu gọn tất cả", "command": "fold_by_level", "mnemonic": "U", "args": {"level": 1} },
+					{ "caption": "Thu gọn tất cả", "command": "fold_by_level", "mnemonic": "u", "args": {"level": 1} },
 					{ "caption": "Thu gọn cấp 2", "command": "fold_by_level", "mnemonic": "2", "args": {"level": 2} },
 					{ "caption": "Thu gọn cấp 3", "command": "fold_by_level", "mnemonic": "3", "args": {"level": 3} },
 					{ "caption": "Thu gọn cấp 4", "command": "fold_by_level", "mnemonic": "4", "args": {"level": 4} },
@@ -274,7 +274,7 @@
 				]
 			},
 			{
-				"caption": "Chuyển đổi kiểu chữ", "mnemonic": "K",
+				"caption": "Chuyển đổi kiểu chữ", "mnemonic": "k",
 				"id": "convert_case",
 				"children":
 				[
@@ -407,7 +407,7 @@
 			{ "command": "show_panel", "args": {"panel": "find_in_files"}, "caption": "Tìm trong tệp..." },
 			{
 				"caption": "Kết quả tìm kiếm",
-				"mnemonic": "Q",
+				"mnemonic": "q",
 				"children":
 				[
 					{ "command": "show_panel", "args": {"panel": "output.find_results", "panel_name" : "Results Panel", "toggle" : true, "toggle_when_not_focused": true} },
@@ -420,7 +420,7 @@
 	},
 	{
 		"caption": "Hiển thị",
-		"mnemonic": "N",
+		"mnemonic": "n",
 		"id": "view",
 		"children":
 		[
@@ -589,7 +589,7 @@
 			},
 			{
 				"caption": "Chuyển tệp sang nhóm",
-				"mnemonic": "S",
+				"mnemonic": "s",
 				"children":
 				[
 					{ "command": "move_to_neighboring_group", "caption": "Tiếp theo" },
@@ -604,13 +604,13 @@
 			{ "caption": "-" },
 			{
 				"caption": "Cú pháp",
-				"mnemonic": "P",
+				"mnemonic": "p",
 				"id": "syntax",
 				"children": [ { "command": "$file_types" } ]
 			},
 			{
 				"caption": "Khoảng lề",
-				"mnemonic": "L",
+				"mnemonic": "l",
 				"id": "indentation",
 				"children":
 				[
@@ -643,7 +643,7 @@
 				]
 			},
 			{ "caption": "-", "id": "settings" },
-			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Tự động xuống dòng", "mnemonic": "X", "checkbox": true },
+			{ "command": "toggle_setting", "args": {"setting": "word_wrap"}, "caption": "Tự động xuống dòng", "mnemonic": "x", "checkbox": true },
 			{
 				"caption": "Cột xuống dòng",
 				"children":
@@ -684,11 +684,11 @@
 	},
 	{
 		"caption": "Đi tới",
-		"mnemonic": "I",
+		"mnemonic": "t",
 		"id": "goto",
 		"children":
 		[
-			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Đi tới bất kỳ đâu…", "mnemonic": "B" },
+			{ "command": "show_overlay", "args": {"overlay": "goto", "show_files": true}, "caption": "Đi tới bất kỳ đâu…", "mnemonic": "b" },
 			{ "caption": "-" },
 			{ "command": "show_overlay", "args": {"overlay": "goto", "text": "@"}, "caption": "Đi tới ký hiệu…" },
 			{ "command": "goto_symbol_in_project", "caption": "Đi tới ký hiệu trong dự án…" },
@@ -732,7 +732,7 @@
 			{ "caption": "-" },
 			{
 				"caption": "Cuộn",
-				"mnemonic": "U",
+				"mnemonic": "u",
 				"id": "scroll",
 				"children":
 				[
@@ -743,7 +743,7 @@
 			},
 			{
 				"caption": "Đánh dấu trang",
-				"mnemonic": "A",
+				"mnemonic": "a",
 				"id": "bookmarks",
 				"children":
 				[
@@ -786,7 +786,7 @@
 			{ "caption": "-", "id": "build" },
 			{
 				"caption": "Hệ thống biên dịch",
-				"mnemonic": "N",
+				"mnemonic": "n",
 				"children":
 				[
 					{ "command": "set_build_system", "args": { "file": "" }, "caption": "Tự động", "checkbox": true },
@@ -809,17 +809,17 @@
 					{ "command": "new_build_system", "caption": "Hệ thống biên dịch mới…" }
 				]
 			},
-			{ "command": "build", "mnemonic": "B" },
+			{ "command": "build", "mnemonic": "b" },
 			{ "command": "build", "args": {"select": true}, "caption": "Biên dịch với…" },
-			{ "command": "cancel_build", "caption": "Hủy biên dịch", "mnemonic": "D" },
+			{ "command": "cancel_build", "caption": "Hủy biên dịch", "mnemonic": "d" },
 			{
 				"caption": "Kết quả biên dịch",
 				"mnemonic": "K",
 				"children":
 				[
-					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Hiển thị kết quả biên dịch", "mnemonic": "H" },
+					{ "command": "show_panel", "args": {"panel": "output.exec"}, "caption": "Hiển thị kết quả biên dịch", "mnemonic": "i" },
 					{ "command": "next_result", "mnemonic": "N" },
-					{ "command": "prev_result", "caption": "Kết quả trước", "mnemonic": "Q" }
+					{ "command": "prev_result", "caption": "Kết quả trước", "mnemonic": "q" }
 				]
 			},
 			{ "command": "toggle_save_all_on_build", "caption": "Lưu tất cả khi biên dịch", "mnemonic": "L", "checkbox": true },
@@ -880,15 +880,15 @@
 			},
 			{ "caption": "-" },
 			{ "command": "save_project_and_workspace_as", "caption": "Lưu dự án thành…", "mnemonic": "L" },
-			{ "command": "close_workspace", "caption": "Đóng dự án", "mnemonic": "G" },
+			{ "command": "close_workspace", "caption": "Đóng dự án", "mnemonic": "g" },
 			{ "command": "open_file", "args": {"file": "${project}"}, "caption": "Chỉnh sửa dự án" },
 			{ "caption": "-" },
 			{ "command": "new_window_for_project", "caption": "Không gian làm việc mới cho dự án" },
-			{ "command": "save_workspace_as", "caption": "Lưu không gian làm việc thành…", "mnemonic": "K" },
+			{ "command": "save_workspace_as", "caption": "Lưu không gian làm việc thành…", "mnemonic": "k" },
 			{ "caption": "-" },
 			{ "command": "prompt_add_folder", "caption": "Thêm thư mục vào dự án…", "mnemonic": "d" },
 			{ "command": "close_folder_list", "caption": "Xóa tất cả thư mục khỏi dự án", "mnemonic": "m" },
-			{ "command": "refresh_folder_list", "caption": "Làm mới thư mục", "mnemonic": "H" }
+			{ "command": "refresh_folder_list", "caption": "Làm mới thư mục", "mnemonic": "h" }
 		]
 	},
 	{
@@ -897,7 +897,7 @@
 		"id": "preferences",
 		"children":
 		[
-			{ "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Duyệt gói…", "mnemonic": "G" },
+			{ "command": "open_dir", "args": {"dir": "$packages"}, "caption": "Duyệt gói…", "mnemonic": "g" },
 			{ "caption": "-" },
 			{
 				"command": "edit_settings", "args":
@@ -967,7 +967,7 @@
 	},
 	{
 		"caption": "Trợ giúp",
-		"mnemonic": "R",
+		"mnemonic": "r",
 		"id": "help",
 		"children":
 		[
