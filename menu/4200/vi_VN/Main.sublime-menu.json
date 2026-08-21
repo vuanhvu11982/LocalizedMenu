@@ -150,7 +150,7 @@
 			{ "command": "new_window", "caption": "Cửa sổ mới", "mnemonic": "s" },
 			{ "command": "close_window", "caption": "Đóng cửa sổ" },
 			{ "caption": "-", "id": "close" },
-			{ "command": "close", "caption": "Đóng tệp", "mnemonic": "P" },
+			{ "command": "close", "caption": "Đóng tệp", "mnemonic": "p" },
 			{ "command": "revert", "caption": "Hoàn tác tệp", "mnemonic": "H" },
 			{ "command": "close_all", "caption": "Đóng tất cả tệp" },
 			{ "caption": "-", "id": "exit" },
@@ -809,7 +809,7 @@
 					{ "command": "new_build_system", "caption": "Hệ thống biên dịch mới…" }
 				]
 			},
-			{ "command": "build", "mnemonic": "b" },
+			{ "command": "build", "mnemonic": "u" },
 			{ "command": "build", "args": {"select": true}, "caption": "Biên dịch với…" },
 			{ "command": "cancel_build", "caption": "Hủy biên dịch", "mnemonic": "d" },
 			{
